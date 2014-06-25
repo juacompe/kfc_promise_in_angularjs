@@ -1,2 +1,5 @@
+# js libraries for development environment
 node_modules/
+# js libraries
+static/libs/
 *.swp

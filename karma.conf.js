@@ -2,7 +2,12 @@ module.exports = function(karma) {
     var config = {};
     config.basePath = '';
     config.frameworks = ['jasmine'];
-    config.files = ['static/js/**', 'specs/**'];
+    config.files = [
+        'static/libs/angular/angular.min.js',
+        'static/libs/angular-mocks/angular-mocks.js',
+        'static/js/**',
+        'specs/**',
+    ];
     config.reporters = ['dots'];
     config.port = 9876;
     config.runnerPort = 9100;
