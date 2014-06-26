@@ -10,8 +10,16 @@
     }
 
     describe('KFCController', function() {
-        it('should make nom nom sounds when eat', function() {
-            expect(scope.eat()).toBe('nom nom');
+        it('should make nom nom sounds when eat egg tart', function() {
+            expect(scope.eat('egg tart')).toBe('nom nom');
+        });
+
+        it('should make yum!! sounds when eat icecream', function() {
+            expect(scope.eat('icecream')).toBe('yum!!');
+        });
+
+        it('should make crunch!! sounds when eat fried chicken', function() {
+            expect(scope.eat('fried chicken')).toBe('crunch!!');
         });
     });
 })();
